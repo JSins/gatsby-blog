@@ -14,6 +14,7 @@ export default function Template({ data }) {
         <Link to="/blog">Zurück</Link>
         <hr />
         <h1>{post.frontmatter.title}</h1>
+        <p>{post.frontmatter.desc}</p>
         <h4>
           Posted by {post.frontmatter.author} on {post.frontmatter.date}
         </h4>
@@ -32,6 +33,8 @@ export const postQuery = graphql`
         title
         author
         date
+        desc
+        postimg
       }
     }
   }

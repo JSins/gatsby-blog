@@ -1,0 +1,61 @@
+@import "../css/typography.css";
+
+$main-color: rgb(226, 181, 58);
+
+body {
+  background-color: rgb(253, 252, 249);
+  header {
+    background-color: rgba(255, 255, 255, 0.486);
+    position: fixed;
+    width: 100%;
+    backdrop-filter: blur(10px);
+  }
+
+  a {
+    color: $main-color;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .blog-post {
+    background-color: #fff;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    padding: 1.5rem;
+    margin: 1rem;
+    border-radius: 10px;
+    transition: 0.2s;
+    &:hover {
+      transform: scale(1.02);
+      box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    }
+    &-date {
+      color: $main-color;
+      text-transform: uppercase;
+      font-size: 0.7rem;
+      font-family: "Karla";
+      font-weight: bold;
+      letter-spacing: 0.1rem;
+    }
+    h2 {
+      font-family: "Merriweather Bold";
+      margin: 1rem 0;
+    }
+    &-bottom {
+      display: flex;
+      div {
+        padding: 0 1.5rem;
+        font-size: 0.7rem;
+        font-family: "Karla";
+        line-height: 1rem;
+        color: #888;
+        &:first-child {
+          padding: 0 1.5rem 0 0;
+        }
+        &:not(:first-child) {
+          border-left: solid 1px #ddd;
+        }
+      }
+    }
+  }
+}

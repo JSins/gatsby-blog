@@ -1,0 +1,75 @@
+@import url(d:\Projekte\gatsby-blog\src\components\css\typography.css);
+body {
+  background-color: #fdfcf9;
+}
+
+body header {
+  background-color: rgba(255, 255, 255, 0.486);
+  position: fixed;
+  width: 100%;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+}
+
+body a {
+  color: #e2b53a;
+}
+
+body a:hover {
+  text-decoration: underline;
+}
+
+body .blog-post {
+  background-color: #fff;
+  -webkit-box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+          box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  padding: 1.5rem;
+  margin: 1rem;
+  border-radius: 10px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+body .blog-post:hover {
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+  -webkit-box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+          box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+
+body .blog-post-date {
+  color: #e2b53a;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  font-family: "Karla";
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+}
+
+body .blog-post h2 {
+  font-family: "Merriweather Bold";
+  margin: 1rem 0;
+}
+
+body .blog-post-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body .blog-post-bottom div {
+  padding: 0 1.5rem;
+  font-size: 0.7rem;
+  font-family: "Karla";
+  line-height: 1rem;
+  color: #888;
+}
+
+body .blog-post-bottom div:first-child {
+  padding: 0 1.5rem 0 0;
+}
+
+body .blog-post-bottom div:not(:first-child) {
+  border-left: solid 1px #ddd;
+}
+/*# sourceMappingURL=main.css.map */

@@ -5,6 +5,8 @@ html {
   box-sizing: border-box;
   overflow-y: scroll;
 }
+
+@import "./css/typography.css";
 body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
@@ -53,6 +55,7 @@ template {
 a {
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
+  text-decoration: none;
 }
 a:active,
 a:hover {
