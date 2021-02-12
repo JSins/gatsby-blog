@@ -7,7 +7,7 @@ import SEO from "../components/seo"
 const BlogPage = ({ data }) => (
   <Layout>
     <SEO title="Blog" />
-    {data.allMarkdownRemark.edges.map(post => (
+    {data.allMarkdownRemark.edges.reverse().map(post => (
       <div key={post.node.id} className="blog-post">
         <small className="blog-post-date">
           Hochgeladen am {post.node.frontmatter.date}
