@@ -1,5 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
+import Custom from "../components/javascript/custom"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -18,6 +19,7 @@ export default function Template({ data }) {
         <h4>
           Posted by {post.frontmatter.author} on {post.frontmatter.date}
         </h4>
+        <button id="playbutton">Play</button>
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
       </div>
     </Layout>
@@ -34,7 +36,7 @@ export const postQuery = graphql`
         author
         date
         desc
-        postimg
+        podcast
       }
     }
   }

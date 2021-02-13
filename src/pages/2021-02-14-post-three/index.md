@@ -4,7 +4,8 @@ date: "2021-02-14"
 title: "Der dritte POST!"
 author: "Erik"
 desc: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."
-postimg: "aaaa"
+podcast: ""
 ---
 
+`audio: /static/post3.mp3`
 Das ist der dritte Post. Ich hoffe, dass _diese Webseite_ übel **abgeht**.

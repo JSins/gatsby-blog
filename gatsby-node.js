@@ -18,7 +18,7 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
               date
               author
               desc
-              postimg
+              podcast
             }
           }
         }

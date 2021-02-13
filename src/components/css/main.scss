@@ -5,16 +5,37 @@ $main-color: rgb(226, 181, 58);
 body {
   background-color: rgb(253, 252, 249);
   header {
-    background-color: rgb(75, 75, 75);
+    background-color: #fff;
+    border-bottom: solid 1px rgb(235, 235, 235);
     // position: fixed;
     // width: 100%;
     // backdrop-filter: blur(10px);
-  }
-
-  a {
-    color: $main-color;
-    &:hover {
-      text-decoration: underline;
+    .header-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .logo {
+        padding: 0.5rem;
+        h1 {
+          margin: 0;
+          font-family: "Lobster";
+          a {
+            color: #333;
+          }
+        }
+      }
+      .navigation {
+        a {
+          padding: 0 1rem;
+          color: #888;
+          font-family: "Karla";
+          text-transform: uppercase;
+          transition: 0.2s;
+          &:hover {
+            color: $main-color;
+          }
+        }
+      }
     }
   }
 

@@ -4,15 +4,46 @@ body {
 }
 
 body header {
-  background-color: #4b4b4b;
+  background-color: #fff;
+  border-bottom: solid 1px #ebebeb;
 }
 
-body a {
+body header .header-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body header .header-inner .logo {
+  padding: 0.5rem;
+}
+
+body header .header-inner .logo h1 {
+  margin: 0;
+  font-family: "Lobster";
+}
+
+body header .header-inner .logo h1 a {
+  color: #333;
+}
+
+body header .header-inner .navigation a {
+  padding: 0 1rem;
+  color: #888;
+  font-family: "Karla";
+  text-transform: uppercase;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+body header .header-inner .navigation a:hover {
   color: #e2b53a;
-}
-
-body a:hover {
-  text-decoration: underline;
 }
 
 body .blog-post {

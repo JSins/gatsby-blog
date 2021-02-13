@@ -7,3 +7,8 @@
   font-family: "Merriweather Bold";
   src: url("../../fonts/Merriweather-Bold.ttf");
 }
+
+@font-face {
+  font-family: "Lobster";
+  src: url("../../fonts/Lobster-Regular.ttf");
+}

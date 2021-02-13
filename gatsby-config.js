@@ -21,7 +21,24 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
-    `gatsby-transformer-remark`,
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          {
+            resolve: "gatsby-remark-audio",
+            options: {
+              id: "test",
+              preload: "auto",
+              loop: false,
+              controls: true,
+              muted: false,
+              autoplay: false,
+            },
+          },
+        ],
+      },
+    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
