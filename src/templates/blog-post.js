@@ -1,9 +1,10 @@
 import React from "react"
 import { Link } from "gatsby"
-import Custom from "../components/javascript/custom"
+import Custom from "../components/audioload"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import Audioload from "../components/audioload"
 
 export default function Template({ data }) {
   const post = data.markdownRemark
@@ -19,10 +20,10 @@ export default function Template({ data }) {
         <h4>
           Posted by {post.frontmatter.author} on {post.frontmatter.date}
         </h4>
-        <button id="playbutton">Play</button>
-        <audio id="lol">
-          <source src={post.frontmatter.podcast}></source>
-        </audio>
+        <Audioload />
+          <audio id="lol">
+            <source src={post.frontmatter.podcast}></source>
+          </audio>
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
       </div>
     </Layout>
