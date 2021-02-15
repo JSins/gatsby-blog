@@ -20,6 +20,9 @@ export default function Template({ data }) {
           Posted by {post.frontmatter.author} on {post.frontmatter.date}
         </h4>
         <button id="playbutton">Play</button>
+        <audio id="lol">
+          <source src={post.frontmatter.podcast}></source>
+        </audio>
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
       </div>
     </Layout>
