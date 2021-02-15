@@ -1,10 +1,9 @@
 import React from "react"
 import { Link } from "gatsby"
-import Custom from "../components/audioload"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import Audioload from "../components/audioload"
+import Audioplayer from "../components/audioplayer"
 
 export default function Template({ data }) {
   const post = data.markdownRemark
@@ -12,7 +11,7 @@ export default function Template({ data }) {
   return (
     <Layout>
       <SEO title="Page two" />
-      <div>
+      <div className="singlepost">
         <Link to="/blog">Zurück</Link>
         <hr />
         <h1>{post.frontmatter.title}</h1>
@@ -20,10 +19,9 @@ export default function Template({ data }) {
         <h4>
           Posted by {post.frontmatter.author} on {post.frontmatter.date}
         </h4>
-        <Audioload />
-          <audio id="lol">
-            <source src={post.frontmatter.podcast}></source>
-          </audio>
+
+        <Audioplayer file={post.frontmatter.podcast} />
+
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
       </div>
     </Layout>

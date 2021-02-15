@@ -1,6 +1,8 @@
 @import "../css/typography.css";
 
-$main-color: rgb(226, 181, 58);
+$main-color: rgb(180, 0, 54);
+$secondary-color: rgb(139, 236, 115);
+$main-color-old: rgb(226, 181, 58);
 
 body {
   background-color: rgb(253, 252, 249);
@@ -77,6 +79,31 @@ body {
           border-left: solid 1px #ddd;
         }
       }
+    }
+  }
+
+  .singlepost {
+    background-color: #fff;
+    padding: 2rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+      rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    border-radius: 10px;
+    h1 {
+      font-family: "Merriweather Bold";
+    }
+
+    .audioplayer {
+      background-color: $main-color;
+      padding: 1rem;
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+        rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+      margin: 2rem 0;
+      border-radius: 10px;
+      display: flex;
+      justify-content: space-between;
+    }
+    #progressbar {
+      width: 300px;
     }
   }
 }

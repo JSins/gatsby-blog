@@ -43,7 +43,7 @@ body header .header-inner .navigation a {
 }
 
 body header .header-inner .navigation a:hover {
-  color: #e2b53a;
+  color: #b40036;
 }
 
 body .blog-post {
@@ -65,7 +65,7 @@ body .blog-post:hover {
 }
 
 body .blog-post-date {
-  color: #e2b53a;
+  color: #b40036;
   text-transform: uppercase;
   font-size: 0.7rem;
   font-family: "Karla";
@@ -98,5 +98,36 @@ body .blog-post-bottom div:first-child {
 
 body .blog-post-bottom div:not(:first-child) {
   border-left: solid 1px #ddd;
+}
+
+body .singlepost {
+  background-color: #fff;
+  padding: 2rem;
+  -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+          box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  border-radius: 10px;
+}
+
+body .singlepost h1 {
+  font-family: "Merriweather Bold";
+}
+
+body .singlepost .audioplayer {
+  background-color: #b40036;
+  padding: 1rem;
+  -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+          box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  margin: 2rem 0;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body .singlepost #progressbar {
+  width: 300px;
 }
 /*# sourceMappingURL=main.css.map */

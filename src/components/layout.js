@@ -12,7 +12,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import Header from "./header"
 import "./layout.css"
 import "./css/main.css"
-import "./audioload"
+import "./audioplayer"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
